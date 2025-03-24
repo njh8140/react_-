@@ -1,0 +1,115 @@
+/* 전체 컨테이너 */
+.lecture-edit-container {
+    width: 100%;
+    max-width: 1200px; /* 필요 시 조절 */
+    margin: 0 auto;
+    font-family: sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* 상단 제목 */
+  .page-title {
+    text-align: center;
+    color: #4472c4;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  /* 메인 영역 (왼쪽 검정 박스 + 오른쪽 폼) */
+  .main-content {
+    display: flex;
+    gap: 40px;       /* 좌우 간격 */
+    margin-bottom: 40px;
+  }
+  
+  /* 왼쪽 검정색 박스 (영상 자리) */
+  .video-preview {
+    width: 680px;    /* 필요 시 조절 */
+    height: 430px;   /* 필요 시 조절 */
+    background-color: #100f0f;
+    border-radius: 4px;
+  }
+  
+  /* 오른쪽 폼 영역 (라벨과 입력창 세로 배치) */
+  .form-area {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;    /* 필요 시 조절 */
+  }
+  
+  /* 폼 그룹: 라벨이 위에, 입력창 아래에 위치 */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .form-group label {
+    color: #4472c4;
+    font-weight: 600;
+    text-align: left;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #0f0f0f;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #4472c4;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  /* 하단: 강의 업로드 (라벨과 입력창 세로 배치) */
+  .upload-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .upload-group label {
+    color: #4472c4;
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  .upload-group input {
+    width: 300px; /* 원하는 너비로 조정 (예: 300px) */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #0f0f0f;
+  }
+  
+  .upload-group input:focus {
+    outline: none;
+    border-color: #4472c4;
+  }
+  
+  /* 반응형 조정 */
+  @media (max-width: 768px) {
+    .main-content {
+      flex-direction: column;
+    }
+    
+    .video-preview,
+    .form-area {
+      max-width: 100%;
+    }
+  }
+  

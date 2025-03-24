@@ -1,0 +1,30 @@
+body {
+    background: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    width: 1440px;
+    height: 1024px;
+    background-color: #fff;
+    position: relative;
+    margin: auto;
+    padding: 20px;
+}
+
+.header, .section, .footer {
+    background-color: #68DCFC;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content-box {
+    background-color: #68DCFC;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 20px;
+    text-align: center;
+}

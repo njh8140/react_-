@@ -1,0 +1,147 @@
+/* 전체 컨테이너 */
+.lecture-list-container {
+  width: 95%;
+  max-width: 1000px;    /* 최대 너비 설정 */
+  margin: 0 auto;
+  font-family: sans-serif;
+  background-color: #fff;
+  padding: 0 1%;
+  box-sizing: border-box;
+}
+
+/* 페이지 제목 */
+.page-title {
+  text-align: center;
+  color: #4472c4;
+  margin: 20px 0;
+  font-size: 3.5vw; /* 뷰포트 너비에 따라 폰트 크기 조정 */
+  /* min-font-size: 18px; 최소 폰트 크기 */
+}
+
+/* 헤더 영역 (공지사항, 로그인 등) */
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 2%;
+  box-sizing: border-box;
+  background: #f0f0f0;
+}
+
+.header-item {
+  flex: 1 1 150px; /* 최소 150px, 필요에 따라 늘어남 */
+  text-align: center;
+  padding: 5px;
+}
+
+/* 테이블 래퍼 */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto; /* 화면 작을 때 수평 스크롤 허용 */
+  margin-bottom: 20px;
+}
+
+/* 공통 테이블 스타일 */
+.info-table {
+  width: 100%;
+  min-width: 600px;  /* 최소 너비 지정 */
+  border-collapse: collapse;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* 테이블 헤더 */
+.info-table thead th {
+  background-color: #4472c4;
+  color: #fff;
+  padding: 10px;
+  font-weight: normal;
+  font-size: 0.8em;
+}
+
+/* 테이블 바디 */
+.info-table tbody td {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 0.6em;
+}
+
+/* 시청하기 링크 */
+.watch-link {
+  color: #1e5fd4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 버튼 스타일 */
+button {
+  padding: 5px 3px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.watch-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.test-btn {
+  background-color: #FF9800;
+  color: white;
+}
+
+/* 미디어 쿼리: 화면 폭 1024px 이하 */
+@media (max-width: 1024px) {
+  .lecture-list-container {
+    width: 98%;
+    padding: 0 2%;
+  }
+  .page-title {
+    font-size: 3vw;
+  }
+  .info-table thead th,
+  .info-table tbody td {
+    padding: 8px;
+    font-size: 0.9em;
+  }
+}
+
+/* 미디어 쿼리: 화면 폭 768px 이하 */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header-item {
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+  }
+  .page-title {
+    font-size: 4vw;
+    margin: 15px 0;
+  }
+  .info-table thead th,
+  .info-table tbody td {
+    padding: 6px;
+    font-size: 0.8em;
+  }
+}
+
+/* 미디어 쿼리: 화면 폭 480px 이하 */
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 5vw;
+    margin: 10px 0;
+  }
+  .info-table thead th,
+  .info-table tbody td {
+    padding: 5px;
+    font-size: 0.75em;
+  }
+}

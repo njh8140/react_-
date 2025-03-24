@@ -1,0 +1,127 @@
+/* 전체 컨테이너: 1440x900 고정, 절대 위치 기준 */
+.mbr-mdfcn-container {
+    position: relative;
+    width: 1440px;
+    height: 900px;
+    background-color: #ffffff;
+    font-family: sans-serif;
+    margin: 0 auto; /* 선택: 수평 중앙 정렬 */
+  }
+  
+  /* 사이드바 (왼쪽 패널) */
+  .sidebar {
+    position: absolute;
+    top: 140px;
+    left: 28px;
+    width: 181px;
+    height: 388px;
+    background-color: #fbf9f9;
+  }
+  
+  /* 사이드바 텍스트 (회원 정보, 강좌 목록, 회원 관리) */
+  .sidebar-menu {
+    position: absolute;
+    top: 395px;
+    left: 38px;
+    color: #000;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  /* 사용자 이름, 역할 */
+  .user-name {
+    position: absolute;
+    top: 347px;
+    left: 55px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .role {
+    position: absolute;
+    top: 164px;
+    left: 54px;
+    color: #000;
+    font-size: 14px;
+  }
+  
+  /* 프로필 박스 (이미지 자리) */
+  .profile-box {
+    position: absolute;
+    top: 197px;
+    left: 54px;
+    width: 129px;
+    height: 128px;
+    background-color: #ccc; /* 임시 배경 */
+  }
+  
+  /* 상단 텍스트 */
+  .title-main {
+    position: absolute;
+    top: 78px;
+    left: 523px;
+    color: #4472c4;
+    font-size: 24px;
+  }
+  .title-member {
+    position: absolute;
+    top: 157px;
+    left: 211px;
+    color: #4472c4;
+    font-size: 16px;
+  }
+  .title-register {
+    position: absolute;
+    top: 148px;
+    left: 1114px;
+    color: #4472c4;
+    font-size: 16px;
+  }
+  
+  /* 첫 번째 테이블 */
+  .table1 {
+    position: absolute;
+    top: 235px;
+    left: 255px;
+    width: 900px;
+  }
+  
+  /* 두 번째 테이블 */
+  .table2 {
+    position: absolute;
+    top: 507px;
+    left: 255px;
+    width: 900px;
+  }
+  
+  /* 공통 테이블 스타일 */
+  .member-table {
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .member-table th,
+  .member-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    white-space: nowrap;
+  }
+  
+  /* 테이블 헤더 배경 */
+  .member-table thead {
+    background-color: #4472c4;
+  }
+  .member-table thead th {
+    color: #ffffff;
+    font-weight: normal;
+  }
+  
+  /* 링크 스타일 */
+  .member-table tbody td a {
+    color: #3c22e9;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  

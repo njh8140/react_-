@@ -1,0 +1,71 @@
+/* body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+} */
+
+/* .container {
+    width: 1400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+} 
+
+.header {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+} */
+
+.section-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.management-section {
+    display: flex;
+    justify-content: space-between; /* 양쪽 정렬 */
+    margin-bottom: 20px;
+}
+.management-section > div { /* 자식 div 요소에 동일한 스타일 적용 */
+    flex: 1; /* 동일한 비율로 공간 분할 */
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* 테이블 셀 간 간격 제거 */
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #e0f2f7; /* Header background color */
+}
+
+.button-group {
+    display: flex;
+    justify-content: center; /* 가운데 정렬 */
+}
+
+.button {
+    background-color: #007bff; /* 파란색 */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 10px; /* 양쪽에 margin 추가 */
+}
+
+.button:hover {
+    background-color: #0056b3; /* 진한 파란색 */
+}

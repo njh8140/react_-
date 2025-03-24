@@ -1,0 +1,74 @@
+/* 전체 컨테이너 */
+.lecture-seq-container {
+    width: 100%;
+    max-width: 1200px; /* 필요 시 조절 */
+    margin: 0 auto;
+    font-family: sans-serif;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* 상단: 왼쪽 "java의 기초", 오른쪽 "강사 : 김자바" */
+  .top-row {
+    display: flex;
+    justify-content: space-between; /* 좌우 끝 정렬 */
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .title-left {
+    margin: 0;
+    font-size: 24px;
+    color: #4472c4;
+  }
+  .teacher-right {
+    font-size: 16px;
+    color: #4472c4;
+  }
+  
+  /* 검정색 박스 (영상 자리) */
+  .video-preview {
+    width: 680px;
+    height: 430px;
+    background-color: #100f0f;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  /* 공통 폼 그룹: 라벨 위, 입력창 아래 */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .form-group label {
+    color: #4472c4;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  /* 입력창/텍스트 영역 공통 */
+  .form-group textarea,
+  .form-group input {
+    width: 680px; /* 검정 박스와 동일 폭 (필요 시 조절) */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    color: #0f0f0f;
+    box-sizing: border-box;
+  }
+  
+  /* 텍스트 영역 */
+  .form-group textarea {
+    height: 100px; /* 필요 시 조절 */
+    resize: none;  /* 크기 조절 불가 (원하면 해제) */
+  }
+  
+  /* placeholder 색상 */
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: #c5c5c5;
+  }
+  

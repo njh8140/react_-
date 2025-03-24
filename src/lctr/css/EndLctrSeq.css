@@ -1,0 +1,196 @@
+/* 전체 컨테이너: 최대 폭 1440px, 높이는 100vh */
+.endlctr-container {
+  width: 1440px;
+  height: 100vh;
+  margin: 80px auto 40px;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  display: block;
+  flex-direction: column;
+}
+
+/* 상단 헤더: 고정 높이 80px */
+.endlctr-header {
+  flex: 0 0 80px;
+  position: relative;
+  padding: 0 40px;
+  background: #4472c4;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #ddd;
+}
+.endlctr-header-title {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #fff;
+}
+.endlctr-apply-btn {
+  position: absolute;
+  right: 40px;
+  font-size: 1.3rem;
+  background-color: #ff7f50;
+  padding: 8px 16px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* 콘텐츠 영역: 좌측 사이드바 + 우측 메인 영역 */
+.endlctr-content {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+/* 좌측 사이드바 */
+.endlctr-sidebar {
+  flex: 0 0 250px;
+  padding: 20px;
+  background-color: #f4f7fa;
+  border-right: 2px solid #ddd;
+  box-sizing: border-box;
+  margin-right: 20px;
+  overflow-y: auto;
+}
+.endlctr-member-type {
+  font-size: 1.4rem;
+  color: #888;
+  margin-bottom: 16px;
+}
+.endlctr-profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.endlctr-profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+.endlctr-member-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0;
+}
+.endlctr-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.endlctr-nav li {
+  margin: 20px 0;
+}
+.endlctr-nav a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #4472c4;
+}
+
+/* 우측 메인 영역 */
+.endlctr-main {
+  flex: 1;
+  padding: 40px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 섹션 제목 */
+.endlctr-section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* 종료된 강좌 테이블 */
+.endlctr-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.endlctr-table th {
+  background-color: #4472c4;
+  color: #fff;
+  padding: 12px;
+  font-size: 1.4rem;
+  border: 1px solid #ddd;
+}
+.endlctr-table td {
+  padding: 16px;
+  font-size: 1.3rem;
+  border: 1px solid #ebe5e5;
+}
+.endlctr-detail-btn {
+  background-color: #1e5fd4;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* 학습 진도율 테이블 */
+.endlctr-progress-section {
+  margin-bottom: 40px;
+}
+.endlctr-progress-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.endlctr-progress-table th {
+  background-color: #4472c4;
+  color: #fff;
+  padding: 16px;
+  font-size: 1.4rem;
+  border: 1px solid #ddd;
+}
+.endlctr-progress-table td {
+  padding: 16px;
+  font-size: 1.3rem;
+  border: 1px solid #ddd;
+}
+
+/* 하단 영역: 페이지네이션 및 강의 목록 보기 */
+.endlctr-footer {
+  flex: 0 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #ddd;
+  padding-top: 10px;
+}
+.endlctr-pagination {
+  display: flex;
+  gap: 20px;
+}
+.endlctr-page {
+  font-size: 1.3rem;
+  color: #4472c4;
+  cursor: pointer;
+}
+.endlctr-page.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.endlctr-all-courses-link {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #4472c4;
+  font-weight: bold;
+}

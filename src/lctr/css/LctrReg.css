@@ -1,0 +1,84 @@
+/* body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+} */
+
+/* .container {
+    width: 1400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+} */
+
+.section-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-label {
+    width: 200px; /* 라벨 너비 고정 */
+    font-size: 1em;
+}
+
+.input-box {
+    flex: 1; /* 남은 공간 모두 사용 */
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 1em;
+    box-sizing: border-box; /* padding 포함 */
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end; /* 오른쪽 정렬 */
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #007bff; /* 파란색 */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.button:hover {
+    background-color: #0056b3; /* 진한 파란색 */
+}
+/* 추가된 CSS 스타일 */
+.achievement-criteria {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.quiz-section, .exam-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.quiz-section .input-label, .exam-section .input-label {
+    width: 100px;
+}
